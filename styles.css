@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 70%;
+    min-width: 320px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(174, 19, 212);
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.788);
+    padding: 20px;
+}
+
+.box h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 90%;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.box img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+}
+
+.buttons button {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vh;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: rgb(174, 19, 212);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    z-index: 999;
+}
+
+.popup-text {
+    margin-top: 10px;
+    font-size: 2rem;
+}
